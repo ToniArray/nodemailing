@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  node:
+    container_name: mormediMailing
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
+    logging:
+      driver: none
+    volumes:
+      - .:/usr/src/app
